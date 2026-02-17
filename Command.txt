@@ -1,0 +1,68 @@
+1. git config --global user.name Nasir86
+2. git config --global user.name
+3. git config --global user.email nasir151086@bscse.uiu.ac.bd
+
+
+4. git init
+5. git status
+6. git add index.html
+7. git add -A (All Files)
+8. git reset
+
+9. git commit
+
+Initial commit
+Enter
+:wq
+
+10. git commit -m "Modification on Index HTML"
+
+Delete content of Index
+
+11. git checkout index.html
+12. git checkout -f (All Files Back to Commit Stage)
+
+13. git log
+14. git log -p -1 (Last 1 Commit)
+
+If we change and commit, then can not see the difference (Local and Stage Compare)
+
+15. git diff
+16. git diff --staged
+
+17. touch test.txt
+18. git add -A
+19. git commit -m "Removal"
+20. git rm test.txt -f
+
+21. touch .gitignore
+22. git add -A
+
+Branch
+
+On Branch Master
+ 
+23. git branch
+24. git branch weblab
+25. git checkout -b main (switch to main)
+26. git checkout weblab
+
+27. git merge weblab -m "Commit"
+
+
+28. git remote add origin git@github.com:Nasir86/Prac01.git
+29. git remote -v
+30. git push origin master
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+31. ssh-keygen -t ed25519 -C "nahmed151086@bscse.uiu.ac.bd"
+32. eval "$(ssh-agent -s)"
+33. ssh-add ~/Desktop/Files/gitkey
+
+https://github.com/Nasir86/Prac01/settings/keys/new
+
+34. cat gitkey.pub
+35. git remote -v
+36. git push -u origin master
+37. git push -u origin weblab
